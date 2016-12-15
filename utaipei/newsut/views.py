@@ -14,5 +14,5 @@ def home(request):
 	soup2 = BeautifulSoup(pw2, 'html.parser')
 	mylist2=soup2.find_all("span", class_="ptname ")
 	mylist = mylist1+mylist2
-	return render(request, "detail.html", {'mylist': mylist})
+	return render(request, "news.html", {'mylist': mylist})
 
