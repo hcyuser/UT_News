@@ -21,7 +21,7 @@ from django.contrib import admin
 from newsut.views import home
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-	url(r'^r1/', home),
+	url(r'^$', home),
 
 ]
 
