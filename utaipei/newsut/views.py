@@ -15,4 +15,3 @@ def home(request):
 	mylist2=soup2.find_all("span", class_="ptname ")
 	mylist = mylist1+mylist2
 	return render(request, "news.html", {'mylist': mylist})
-
